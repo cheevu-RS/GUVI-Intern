@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>
+            GUVI Intern Task
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.brighttheme.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.buttons.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper justify-content-center align-items-center">
+            <div class="row container justify-content-center align-items-center">
+                <div class="col-5 white justify-content-center align-items-center">
+                        <div class="signin">
+                            <div class="h1">Welcome Back!<br></div>
+                            <div class="h3">Please log in!</div>
+                            <button id="signin" type="button" class="btn btn-lg btn-l btn-outline-secondary waves-effect">Sign In</button>    
+                        </div>
+                        <div class="signup hidden">                   
+                            <div class="h1">Don't have an account? Sign up!</div>
+                            <button id="signup" type="button" class="btn btn-lg btn-l btn-outline-secondary waves-effect">Sign Up</button>   
+                        </div>
+                </div>
+
+                <div class="col-7 bg-green justify-content-center align-items-center">
+                        <div class="signin hidden">
+                            <div class="h1">Sign in</div>
+                            <form>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input class="username form-control" type="text" placeholder="username">
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    </div>
+                                    <input class="password form-control" type="password" placeholder="password">
+                                </div>
+                                <div class="form-group">
+                                    <input id="login" type="button" value="Login" class="btn btn-r btn-lg">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup">
+                                <div class="h1">Register</div>
+                                <form>
+                                    <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input id="name" type="text" class="form-control" placeholder="name">
+                                        </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input id="username" type="text" class="form-control" placeholder="username">
+                                    </div>
+                                    <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input id="email" type="text" class="form-control" placeholder="email">
+                                        </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input id="password" type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input id="rpassword" type="password" class="form-control" placeholder="repeat password">
+                                        </div>
+                                    <div class="form-group">
+                                        <input id="register" type="button" value="Register" class="btn btn-r btn-lg">
+                                    </div>
+                                </form>
+                        </div>   
+                </div>
+            </div>
+            
+            <div class=" hidden row login centered">
+                
+                
+            </div>
+        </div>
+    </body>
+    </html>
